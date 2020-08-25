@@ -6,13 +6,15 @@ input.onButtonPressed(Button.A, function () {
     lista = []
     alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     qtdeletras = alfabeto.length
-    for (let índice = 0; índice <= qtdeletras; índice++) {
+    basic.showNumber(qtdeletras)
+    for (let índice = 0; índice <= qtdeletras - 1; índice++) {
         basic.showString(alfabeto.charAt(índice))
         lista.push(alfabeto.charAt(índice))
     }
     basic.showIcon(IconNames.Heart)
 })
 input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
     lista.reverse()
     for (let valor of lista) {
         basic.showString("" + (valor))
