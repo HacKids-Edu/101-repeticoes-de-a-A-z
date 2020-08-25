@@ -16,6 +16,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     lista.reverse()
+    basic.showNumber(lista.length)
     for (let valor of lista) {
         basic.showString("" + (valor))
     }
