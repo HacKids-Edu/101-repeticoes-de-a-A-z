@@ -20,4 +20,5 @@ input.onButtonPressed(Button.B, function () {
     for (let valor of lista) {
         basic.showString("" + (valor))
     }
+    basic.showIcon(IconNames.SmallHeart)
 })
